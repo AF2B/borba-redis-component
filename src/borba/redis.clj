@@ -77,13 +77,13 @@
    (wcar* conn (car/set k v)))
   ([conn k v {:keys [ttl-seconds nx? xx?]}]
    (wcar* conn
-     (cond
-       (and ttl-seconds nx?) (car/set k v :ex ttl-seconds :nx)
-       (and ttl-seconds xx?) (car/set k v :ex ttl-seconds :xx)
-       ttl-seconds           (car/set k v :ex ttl-seconds)
-       nx?                   (car/set k v :nx)
-       xx?                   (car/set k v :xx)
-       :else                 (car/set k v)))))
+          (cond
+            (and ttl-seconds nx?) (car/set k v :ex ttl-seconds :nx)
+            (and ttl-seconds xx?) (car/set k v :ex ttl-seconds :xx)
+            ttl-seconds           (car/set k v :ex ttl-seconds)
+            nx?                   (car/set k v :nx)
+            xx?                   (car/set k v :xx)
+            :else                 (car/set k v)))))
 
 (defn del!
   "Deletes one or more keys. Returns the number of deleted keys."
