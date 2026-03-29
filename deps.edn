@@ -1,0 +1,7 @@
+{:paths ["src"]
+
+ :deps
+ {org.clojure/clojure        {:mvn/version "1.12.0"}
+  integrant/integrant        {:mvn/version "0.8.1"}
+  com.taoensso/carmine       {:mvn/version "3.4.1"}
+  org.slf4j/slf4j-simple     {:mvn/version "2.0.13"}}}
