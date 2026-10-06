@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-10-06
+
 ### Added
 
 - `:password`, `:username`, `:database` and `:ssl?`, so the component can connect to a Redis that asks for credentials, that has
@@ -46,5 +48,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 First release: the `:components/redis` Integrant component, and `wcar*`, `get!`, `mget!`, `exists?`, `ttl!`, `set!`, `del!`,
 `expire!`, `incr!`, `incrby!`, `hset!`, `hget!`, `hgetall!`, `hdel!`, `lpush!`, `rpush!`, `lrange!` and `llen!`.
 
-[Unreleased]: https://github.com/AF2B/borba-redis-component/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/AF2B/borba-redis-component/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/AF2B/borba-redis-component/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/AF2B/borba-redis-component/releases/tag/v1.0.0
